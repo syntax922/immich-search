@@ -1,0 +1,9 @@
+services:
+  immich-smart-search:
+    build: .
+    container_name: immich_smart_search
+    ports:
+      - "8080:80"
+    env_file:
+      - .env
+    restart: always
