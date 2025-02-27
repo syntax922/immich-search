@@ -317,7 +317,6 @@ def search_form():
 @app.get("/searchRedirect")
 def search_redirect(query: str):
     # Construct Immich search URL using the provided query JSON.
-    # Assuming immich domain is immich.sras623.com. In production, make this configurable.
     immich_search_url = f"https://{immich_host}:{immich_port}/search?query={query}"
     html_content = f"""
     <html>
